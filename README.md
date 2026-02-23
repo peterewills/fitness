@@ -12,6 +12,22 @@ Tracks weight measurements and nutrition data. Shows weekly averages for weight 
 
 ## Data
 
-Data exports are stored in `data/` with date suffixes for reproducibility. Source data comes from:
-- **Strong app**: Workout CSVs exported to Downloads as `strong_workouts.csv`
-- **MyFitnessPal/other**: File exports containing measurement and nutrition summaries
+Data is organized by source with timestamped filenames:
+
+```
+data/
+  my-fitness-pal/
+    measurement_YYYYMMDD_HHMM.csv
+    nutrition_YYYYMMDD_HHMM.csv
+  strava/
+    activities_YYYYMMDD_HHMM.csv
+  strong/
+    workouts_YYYYMMDD_HHMM.csv
+```
+
+Source data comes from:
+- **MyFitnessPal**: `File-Export-*` folders in Downloads
+- **Strava**: `export_*` folders in Downloads (full data export, only `activities.csv` is used)
+- **Strong**: `strong_workouts.csv` in Downloads
+
+The notebooks auto-discover the latest export folders from `~/Downloads` and copy them to `data/`.
