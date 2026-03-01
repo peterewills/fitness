@@ -31,3 +31,14 @@ Source data comes from:
 - **Strong**: `strong_workouts.csv` in Downloads
 
 The notebooks auto-discover the latest export folders from `~/Downloads` and copy them to `data/`.
+
+## Lean Bulk Protocol
+
+**Target:** +250 cal/day above maintenance (~0.5 lb/week gain)
+
+**Macros:** 180g protein, 80-100g fat, carbs fill the rest
+
+**Checkpoints (every 2 weeks):**
+- Gained <0.5 lbs → increase to +300
+- Gained 0.5-1.5 lbs → stay at +250
+- Gained >3 lbs → decrease to +200
