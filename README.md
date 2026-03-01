@@ -32,6 +32,25 @@ Source data comes from:
 
 The notebooks auto-discover the latest export folders from `~/Downloads` and copy them to `data/`.
 
+
+# General Fitness Ideas
+
+## Eating Strategy
+
+**Formula:** 2650 + 70% of cycling calories (+/- desired surplus/deficit)
+
+- Base intake of 2650 cal/day on rest days
+- Add 70% of calories burned from cycling (from Strava)
+- Strength training calories are NOT counted towards the adjustment
+
+**Example (at maintenance calories):**
+- Rest day: 2650 cal
+- Strength training only day: 2650 cal
+- 1000 cal cycling day: 2650 + 700 = 3350 cal
+
+Run `python analysis/eating_strategy.py` to simulate this strategy against historical
+data.
+
 ## Lean Bulk Protocol
 
 **Target:** +250 cal/day above maintenance (~0.5 lb/week gain)
